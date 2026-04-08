@@ -1,0 +1,223 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #7b2626; /* Dark Red/Brown color */
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #e6e6e6; /* Light gray */
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 5px;
+        }
+
+        nav span {
+            color: #000;
+        }
+
+        /* Main Container layout */
+        .container {
+            display: flex; /* Makes the 3 columns sit side-by-side */
+            min-height: 80vh; /* Ensures it takes up most of the screen */
+            width: 100%;
+        }
+        .right-photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Makes the photo circular */
+            object-fit: cover;
+            border: 5px solid #ddd;
+        }
+
+        /* Left Sidebar */
+        .sidebar-left {
+            width: 20%;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .sidebar-left h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-left a {
+            display: block;
+            margin-bottom: 5px;
+            color: #0056b3;
+        }
+
+        /* Simulated Video Box */
+        .video-placeholder {
+            margin-top: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+        
+        .play-icon {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #888;
+        }
+
+        /* Main Content (Center) */
+        .main-content {
+            width: 60%;
+            padding: 20px 40px;
+        }
+
+        .main-content h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .info-list {
+            list-style-type: disc;
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        .info-list li {
+            margin-bottom: 5px;
+        }
+
+        /* Nested Hobbies List */
+        .hobbies-list {
+            list-style-type: decimal;
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        a.link-blue {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Right Sidebar */
+        .sidebar-right {
+            width: 20%;
+            padding: 20px;
+            border-left: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .sidebar-right h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .sidebar-right p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Responsive Design: Stacks columns on mobile phones */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar-left, .main-content, .sidebar-right {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Website Logo (Image)</h1>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a> <span>|</span> 
+        <a href="Contact.html">Contact Us</a> <span>|</span> 
+        <a href="About.html">About</a>
+    </nav>
+
+    <div class="container">
+        
+        <aside class="sidebar-left">
+            <h3>My Pages Online</h3>
+            <a href="https://www.facebook.com/ahmed.s.issa0">Facebook</a>
+            <a href="https://www.twitter.com">Twitter</a>
+
+            <div class="video-placeholder">
+                <div>Video unavailable</div>
+                <div style="text-decoration: underline; font-size: 10px; margin-top:5px; color: #ccc;">Watch on YouTube</div>
+                <div class="play-icon">▶</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2>My Profile</h2>
+            <ul class="info-list">
+                <li><strong>Name:</strong> Hamad Sayed Issa</li>
+                <li><strong>Age:</strong> 25</li>
+                <li><strong>Address:</strong> Fayoym, Egypt</li>
+                <li><strong>Phones:</strong> 01069574649</li>
+                <li><strong>Faculty:</strong> <a href="#" class="link-blue">Your Faculty Website</a></li>
+                <li><strong>Hobbies:</strong>
+                    <ol class="hobbies-list">
+                        <li>Reading</li>
+                        <li>Coding</li>
+                        <li>Travelling</li>
+                    </ol>
+                </li>
+                <li><strong>Mail:</strong> <a href="mailto:hamadsayedissa@gmail.com" class="link-blue">hamadsayedissa@gmail.com</a></li>
+            </ul>
+        </main>
+
+        <aside class="sidebar-right">
+            <h3>Personal Photo</h3>
+            <div class="right-photo">
+            <img src="resource/per.jpg" alt="Personal Photo">
+        </div>
+            </aside>
+
+    </div>
+
+</body>
+</html>

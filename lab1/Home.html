@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* 1. Arabic Name Centered */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        /* Layout for Left (Info) and Right (Photo) */
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 0 50px;
+        }
+
+        .left-info {
+            width: 50%;
+        }
+
+        .right-photo {
+            width: 40%;
+            text-align: center;
+        }
+
+        .right-photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Makes the photo circular */
+            object-fit: cover;
+            border: 5px solid #ddd;
+        }
+
+        /* Long Text Styling */
+        .about-text {
+            margin: 40px 0;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        /* Video Styling */
+        .video-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        /* Links Section Styling */
+        .bottom-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .bottom-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .scroll-up-icon {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #333;
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 20px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <a id="top"></a>
+
+    <h1>حمد سيد </h1>
+
+    <div class="profile-container">
+        <div class="left-info">
+            <h3>Personal Information:</h3>
+            <ul>
+                <li><strong>Name:</strong> Hamad Sayed Issa</li>
+                <li><strong>College:</strong> Faculty of Engineering</li>
+                <li><strong>Field:</strong> Computer Science</li>
+                <li><strong>Age:</strong> 25 Years Old</li>
+                <li><strong>Location:</strong> Fayoum, Egypt</li>
+            </ul>
+        </div>
+
+        <div class="right-photo">
+            <img src="resource/per.jpg" alt="Personal Photo">
+        </div>
+    </div>
+
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate learner interested in web development, HTML, and CSS design.
+            <br><br>
+            A paragraph is a self-contained unit of writing, typically several sentences long, that develops a single main idea,<br> starting with a topic sentence that introduces the concept,<br> followed by supporting sentences that explain, describe,<br> or prove that idea, and ending with a concluding thought that wraps it up,<br> all working together to create a unified and coherent section of a larger text.<br> Think of it as a mini-essay, focusing on one specific point, <br>like describing your family, explaining a hobby,<br> or proving an argument, <br>making it easy for readers to follow your thoughts.
+            <br>
+            <hr>
+        
+        </p>
+    </div>
+
+    <div class="video-container">
+        <h3>My Favorite Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9vUo2wj-fAA?si=JdEiXvK9yPjuPOiL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 	clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <div class="bottom-links">
+        <a href="#top">Go to Top</a>
+        
+        <a href="About.html">About Page</a>
+        
+        <a href="Contact.html">Contact Page</a>
+    </div>
+
+    <footer>
+        <p>Follow me on Social Media:</p>
+        
+        <a href="https://www.facebook.com/ahmed.s.issa0" target="_blank">
+            <img src="resource/fb_icon.png" alt="Facebook" class="social-icon">
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="resource/twit.png" alt="Twitter" class="social-icon">
+        </a>
+
+        <a href="#top" title="Scroll to Top">
+            <img src="https://placehold.co/30?text=UP" alt="Up Arrow" class="scroll-up-icon">
+        </a>
+    </footer>
+
+</body>
+</html>
